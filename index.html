@@ -1,0 +1,705 @@
+<?php require('onepage.php') ?>
+<!DOCTYPE html>
+<html dir="rtl">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Arthrocalm</title>
+<meta name="description" content="">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="robots" content="noindex, nofollow">
+    <script src=" https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href="img/qq.css" rel="stylesheet">
+    <link rel="shortcut icon" href="img/banka.png" type="image/x-icon">
+   <!-- INTH_SNIPPET_TOP -->
+</head>
+<body cz-shortcut-listen="true">
+    <section>
+        <div class="block1-2 mobile">
+            <div class="container">
+                <div class="block1-2__item">
+                    <div class="timer">
+                        <div class="timer__header">الوقت المتبقي لنهاية العرض الترويجي</div>
+                        <div class="timer__container">
+                            <div class="timer__item timer__item_hours">
+                                <div id="hours" class="timer__item-tx">00</div>
+                                <div class="timer__item-label">ساعات</div>
+                            </div>
+                            <div class="timer__item timer__item_minutes">
+                                <div id="min" class="timer__item-tx">49</div>
+                                <div class="timer__item-label">دقائق</div>
+                            </div>
+                            <div class="timer__item timer__item_seconds">
+                                <div id="sec" class="timer__item-tx">32</div>
+                                <div class="timer__item-label">ثواني</div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="button-mobile" href="#to_scroll">شراء</a>
+                </div>
+            </div>
+        </div>
+        <section class="block1">
+            <div class="container">
+                <h1 class="block1-header">
+                    <div class="block1-header__text block2__text-original" style="padding: 2px;">أرتروكالم - أفضل مكمل غذائي
+                        طبيعي لآلام المفاصل</div>
+                    <div class="block1-header__subtext">إنسَ أمر ألم المفاصل فورًا وإلى الأبد!</div>
+                </h1>
+                <div class="package-img mobile">
+                    <img src="img/package.png" alt="">
+                </div>
+                <div class="block1-container">
+                    <div class="block1-container__left">
+                        <ul class="block1-list">
+                            <li class="block1-list__item">
+                                <img src="img/i.png" alt="" class="block1-list__img">
+                                <div class="block1-list__text">في 99٪ من الحالات ، يجدد أنسجة المفاصل التالفة.</div>
+                            </li>
+                            <li class="block1-list__item">
+                                <img src="img/i.png" alt="" class="block1-list__img">
+                                <div class="block1-list__text">يعيد لك الحركة الطبيعية خلال اسبوعين</div>
+                            </li>
+                            <li class="block1-list__item">
+                                <img src="img/i.png" alt="" class="block1-list__img">
+                                <div class="block1-list__text"><span class="bold green">يخفف جميع أعراض ألام المفاصل في غضون 30
+                                        دقيقة بعد الاستخدام</div>
+                            </li>
+                            <li class="block1-list__item">
+                                <img src="img/i.png" alt="" class="block1-list__img">
+                                <div class="block1-list__text">يوقف جميع الإلتهابات ، وستنسى هذه المشكلة إلى الأبد.
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="block1__bottom-text" style="margin-top: 5px">يعيد صحة المفاصل خلال 28 يوم</div>
+                    </div>
+                    <div class="block1-container__right">
+                        <form class="form orderForm" method="post" action="">
+                            <div class="form__sticker">
+                                <div class="form__sticker-text">- 50%</div>
+                            </div>
+                            <div class="form__container">
+                                <div class="form__header">املأ النموذج</div>
+                                <?= countryDefault() ?>
+
+                                <div class="form__row">
+                                    <input placeholder="الاسم الكامل" type="text" id="name" class="form__input order_data required tooltipstered" required name="name" autocomplete="off">
+                                </div>
+                                <div class="form__row">
+                                    <input placeholder="الهاتف المحمول" type="tel" id="phone" class="form__input order_data required tooltipstered" required name="phone" autocomplete="off" >
+                                </div>
+                                <div class="form__price">
+                                    <div class="form__price--old"><?= $oldPriceHtml ?><?= $currencyDisplayHtml ?></div>
+                                    <div class="form__price--new" style="white-space: nowrap"><?= $newPriceHtml ?><?= $currencyDisplayHtml ?></div>
+                                </div>
+                                <button class="btn buynow" type="submit">شراء</button>
+                                <div class="timer">
+                                    <div class="timer__header">الوقت المتبقي لنهاية العرض الترويجي</div>
+                                    <div class="timer__container">
+                                        <div class="timer__item timer__item_hours">
+                                            <div id="hours" class="timer__item-tx">00</div>
+                                            <div class="timer__item-label">ساعات</div>
+                                        </div>
+                                        <div class="timer__item timer__item_minutes">
+                                            <div id="min" class="timer__item-tx">49</div>
+                                            <div class="timer__item-label">دقائق</div>
+                                        </div>
+                                        <div class="timer__item timer__item_seconds">
+                                            <div id="sec" class="timer__item-tx">32</div>
+                                            <div class="timer__item-label">نواني</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                        <div class="package desktop"></div>
+                        <div class="block1-decor"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="block2">
+            <div class="container">
+                <h4 class="subheader">تهالك المفاصل</h4>
+                <h3 class="header">
+                    <span class="header__text">كل منا قد يكون في خطر</span>
+                </h3>
+                <div class="block2__text">
+                    يمكن أن تكون أسباب الألم مختلفة ، ولكن الشيء الأكثر أهمية هو منع الأمراض الأكثر خطورة التي يمكن أن
+                    تصبح غير قابلة للشفاء بمرور الوقت. إذا كانت إحدى النقاط أدناه مناسبة لك ، فأنت عرضة لتلف المفاصل:
+                </div>
+                <ul class="block2-list">
+                    <li class="block2-list__item">
+                        <img src="img/l1.png" alt="" class="block2-list__img">
+                        <div class="block2-list__text">الوزن الزائد وقلة النشاط</div>
+                    </li>
+                    <li class="block2-list__item">
+                        <img src="img/l2.png" alt="" class="block2-list__img">
+                        <div class="block2-list__text"><span class="red">الأنفلونزا والالتهابات وأمراض عضوية أخرى</div>
+                    </li>
+                    <li class="block2-list__item">
+                        <img src="img/l3.png" alt="" class="block2-list__img">
+                        <div class="block2-list__text"> تمارس النشاط البدني بانتظام 3 مرات في الأسبوع على الأقل</div>
+                    </li>
+                    <li class="block2-list__item">
+                        <img src="img/l4.png" alt="" class="block2-list__img">
+                        <div class="block2-list__text">إصابات وكدمات</div>
+                    </li>
+                    <li class="block2-list__item">
+                        <img src="img/l5.png" alt="" class="block2-list__img">
+                        <div class="block2-list__text">فوق 35 سنة</div>
+                    </li>
+                    <li class="block2-list__item">
+                        <img src="img/l6.png" alt="" class="block2-list__img">
+                        <div class="block2-list__text">عرضة للالتهابات المتكررة</div>
+                    </li>
+                </ul>
+                <div class="block2-flex">
+                    أرتروكالم لا يحارب المشكلة فقط ، لكنه يمنع تهالك المفاصل. هذا المنتج مناسب  للمساعدة في
+                    المراحل المتأخرة.
+                    <div class="block2-flex__check"></div>
+                </div>
+            </div>
+        </section>
+        <section class="block3">
+            <div class="container">
+                <h3 class="header">
+                    <span class="header__text">أرتروكالم- مصطلح جديد في الطب</span>
+                </h3>
+                <div class="block3__container">
+                    <div class="block3__left">
+                        <div class="block3__text-header">تكتب وسائل الإعلام ، مكمل غذائي طبيعي حاصل على براءة اختراع تعمل معجزات ، 
+                        </div>
+                        <div class="block3__text">
+                            <p><span class="bold green up">Arthrocalm أقراص طبيعية تتكون من مكونات نباتية. تحتوي على
+                                    :(نبات الكُلَّاب)مستخلص الكركمين , خلاصة الزنجبيل , مسحوق الثوم ,زيت إكليل الجبل العطري, عشب مخلب الشيطان.
+                            </p>
+                            <p>  يتفوق Arthrocalm على المنافسين عدة مرات. المكونات
+                                النشطة  به تعمل بدقة أكبر على الأربطة والأوتار.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="block3__right">
+                        <div class="block3-package">
+                            <img src="img/package.png" alt="">
+                            <div class="block3-package__tip">صيغة الوقاية</div>
+                            <div class="block3-package__tip2" style=" padding-left: 45px">مكونات طبيعية <br> 100%
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="block3__decor1"></div>
+                <div class="block3__decor2"></div>
+                <div class="block3__decor3"></div>
+            </div>
+        </section>
+        <section class="block4">
+            <div class="container">
+                <div class="block4__container">
+                    <ul class="block4-list">
+                        <li class="block4-list__item" style="width: 84%">
+                            <div class="block4-list__text">84٪ من المستخدمين توقفوا عن الشعور بآلام في الجسم بعد 20 دقيقة
+                                من تناول المكمل الغذائي أرتروكالم</div>
+                            <div class="block4-list__percent">84%</div>
+                        </li>
+                        <li class="block4-list__item" style="width: 97%">
+                            <div class="block4-list__text">97٪ من المستخدمين شعروا بتسكين الآلام بشكل فوري.</div>
+                            <div class="block4-list__percent">97%</div>
+                        </li>
+                        
+                        <li class="block4-list__item" style="width: 99%">
+                            <div class="block4-list__text">أبلغ 99.9٪ من المستخدمين عن تحسن عام وزيادة في القوة</div>
+                            <div class="block4-list__percent">99.9%</div>
+                        </li>
+                    </ul>
+                    <div class="block4-photos">
+                        <img class="block4-photos__img" src="img/photos.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="block5">
+            <div class="container">
+                <h3 class="header">
+                    <span class="header__text">سوف يحررك Arthrocalm للأبد من:</span>
+                </h3>
+                <ul class="block5-list">
+                    <li class="block5-list__item">
+                        <div class="block5-list__item__container">
+                            <div class="block5-list__img">
+                                <img src="img/lis1.jpg" alt="">
+                            </div>
+                            <div class="block5-list__text">التهاب المفاصل و العظام</div>
+                        </div>
+                    </li>
+                    <li class="block5-list__item">
+                        <div class="block5-list__item__container">
+                            <div class="block5-list__img">
+                                <img src="img/lis2.jpg" alt="">
+                            </div>
+                            <div class="block5-list__text">سينوفيت</div>
+                        </div>
+                    </li>
+                    <li class="block5-list__item">
+                        <div class="block5-list__item__container">
+                            <div class="block5-list__img">
+                                <img src="img/lis3.jpg" alt="">
+                            </div>
+                            <div class="block5-list__text">ترقق المفاصل و العظام</div>
+                        </div>
+                    </li>
+                    <li class="block5-list__item">
+                        <div class="block5-list__item__container">
+                            <div class="block5-list__img">
+                                <img src="img/lis4.jpg" alt="">
+                            </div>
+                            <div class="block5-list__text">التهاب الكيسي</div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="block5-decor"></div>
+            </div>
+        </section>
+        <section class="block6">
+            <div class="container">
+                <h3 class="header">
+                    <span class="header__text">كيف يعمل ARTHROCALM ؟</span>
+                </h3>
+                <div class="block6__container">
+                    <div class="block6__img">
+                        <img src="img/bone.png" alt="">
+                        <div class="block6__img__text1">الاعصاب</div>
+                        <div class="block6__img__text2">الأربطة</div>
+                        <div class="block6__img__text3">الانسجة</div>
+                    </div>
+                    <ul class="block6-list">
+                        <li class="block6-list__item">
+                            <div class="block6-list__text">يزيل الألم. بسبب خاصية الاختراق ، تؤثر الأقراص على النهايات
+                                العصبية ، و تساعد علي توفير انزلاق سلس أثناء المشي.</div>
+                        </li>
+                        <li class="block6-list__item">
+                            <div class="block6-list__text"><span class="green bold">يعيد مرونة الأوتار المتصلة بالعظام
+                                    والمسؤولة عن الحركة.</div>
+                        </li>
+                        <li class="block6-list__item">
+                            <div class="block6-list__text"><span class="green bold">يقوي الأنسجة الضامة حول المفاصل.
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="block6-decor1"></div>
+                <div class="block6-decor2"></div>
+            </div>
+        </section>
+        <section class="block7">
+            <div class="container">
+                <h3 class="header">
+                    <span class="header__text">مكونات طبيعية ومبتكرة 100٪</span>
+                </h3>
+                <ul class="block7-list">
+                    <li class="block7-list__item">
+                        <div class="block7-list__img">
+                            <img src="img/list1.png" alt="">
+                        </div>
+                        <div class="block7-list__content">
+                            <div class="block7-list__header">  مستخلص الكركمين</div>
+                            <div class="block7-list__text"> يحتوي علي العديد من الخصائص المهمة كما انه مضاد للإلتهابات بشكل عام و لإلتهاب المفاصل بشكل خاص و حماية الاعصاب</div>
+                        </div>
+                    </li>
+                    <li class="block7-list__item">
+                        <div class="block7-list__img">
+                            <img src="img/list2.png" alt="">
+                        </div>
+                        <div class="block7-list__content">
+                            <div class="block7-list__header">مسحوق الثوم</div>
+                            <div class="block7-list__text">من أهم فوائد مسحوق الثوم انه مفيد لأمراض القلب و لتقوية الأعصاب و مفيد للشرايين و الاوعية الدموية مما يساعد علي تخفيف ألام الاعصاب و المفاصل
+                                </div>
+                        </div>
+                    </li>
+                    <li class="block7-list__item">
+                        <div class="block7-list__img">
+                            <img src="img/list3.png" alt="">
+                        </div>
+                        <div class="block7-list__content">
+                            <div class="block7-list__header">الزنجبيل</div>
+                            <div class="block7-list__text"> يمتلك الزنجبيل عدة فوائد لا حصر لها و هو من المكونات الأساسية للمساعدة علي إختفاء إالتهابات الأعصاب</div>
+                        </div>
+                    </li>
+                    <li class="block7-list__item">
+                        <div class="block7-list__img">
+                            <img src="img/list5.png" alt="">
+                        </div>
+                        <div class="block7-list__content">
+                            <div class="block7-list__header">زيت اكليل الجبل العطري </div>
+                            <div class="block7-list__text"> بحتوي علي العديد من الفوائد منها حماية الكبد و الاعصاب و التخلص من ألام المفاصل علي الفور</div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="block7-decor"></div>
+            </div>
+        </section>
+        <section class="block8">
+            <div class="container">
+                <h3 class="header">
+                    <span class="header__text">رأي دكتور العظام ب Arthrocalm&nbsp;</span>
+                </h3>
+                <div class="doc">
+                    <div class="doc__text">
+                        <p>لسوء الحظ ، في عام 2021 ، انخفض متوسط ​​عمر الأشخاص الذين يعانون من أمراض مختلفة متعلقة
+                            بالمفاصل. على سبيل المثال ، من بين 10 أشخاص يأتون لي، 6 مراهقين تبلغ أعمارهم 18 عامًا. إنه
+                            يجعل الحياة صعبة عليهم حقًا ويؤثر على رفاههم.
+                        </p>
+                        <p>ومع ذلك ، فأنا لا أدعم الأدوية أو الحقن أو العمليات الجراحية. يعتبر Arthrocalm هو الأكثر
+                            فاعلية ، وفي الوقت نفسه غير ضار بالأعضاء الأخرى. مع ذلك ، يكون مفعوله سريعًا جدًا وغير مؤلم.
+                            لاحظ مرضاي تحسنًا ملحوظًا في الأسبوع الأول.
+                        </p>
+                        <p>يركز معظم زملائي الآن على هذا المنتج ، حيث أنه من الواضح أنه الرائد بين جميع المنتجات
+                            المحترمة المستخدمة لحل مشاكل مماثلة. ويؤكد مئات المرضى الممتنين هذه الحقيقة.
+                        </p>
+                    </div>
+                    <div class="doc__name">جمال ظريف<span class="doc-prof">
+                            جراح العظام،, <br>
+                            خبرة 27 سنة </span></div>
+                    <div class="doc__sign"></div>
+                </div>
+            </div>
+        </section>
+        <section class="block9">
+            <div class="container">
+                <h3 class="header">
+                    <span class="header__text">مرضي قد نسوا بالفعل آلام المفاصل </span>
+                </h3>
+                <div class="review slide">
+                    <div class="review__item">
+                        <div class="review__img">
+                            <img src="img/rev1.png" alt="">
+                            <div class="review__img-before">قبل</div>
+                            <div class="review__img-after">بعد</div>
+                            <div class="review__name">نور</div>
+                        </div>
+                        <div class="slick-dots"></div>
+                        <div class="review__text">عندما كبر حجم ركبتي ، ناهيك عن الاحمرار والألم الشديد ، ذهبت على الفور
+                            إلى الطبيب. أوصى بArthrocalm. اعتقدت أنه مجرد هراء آخر ، مثل جميع المنتجات الجديدة ، لكنني
+                            اتبعت بطاعة توصيات الطبيب وبعد أسبوع رأيت نتائج مذهلة. أنا سعيد جدًا لأنني لم أجري عملية جراحية!
+                            لقد تخلصت من هذه المشكلة خلال 5 أيام!</div>
+                    </div>
+                    <div class="review__item">
+                        <div class="review__img">
+                            <img src="img/rev2.png" alt="">
+                            <div class="review__img-before">قبل</div>
+                            <div class="review__img-after">بعد</div>
+                            <div class="review__name">عدنان</div>
+                        </div>
+                        <div class="review__text">لم أستطع المشي علي رجلي بأريحية  لمدة عام كامل. هذا غير مريح للغاية لأنني أعمل كعامل بناء.
+                            لم أستطع تحمل تكلفة المكملات الغذائية باهظة الثمن التي يصفها جميع الأطباء. كم كنت سعيدًا عندما طلبت
+                            Arthrocalm من هذا الموقع بهذا السعر! بالطبع ، لم أكن أعتقد أن الألم سيقل بسرعة أو حتى
+                            يختفي. ولكن بعد أسبوع ، صغر التورم بشكل ملحوظ. إستغرق الشفاء التام 3 أشهر!</div>
+                    </div>
+                    <div class="review__item">
+                        <div class="review__img">
+                            <img src="img/rev3.png" alt="">
+                            <div class="review__img-before">قبل</div>
+                            <div class="review__img-after">بعد</div>
+                            <div class="review__name">ابراهيم</div>
+                        </div>
+                        <div class="review__text">بمجرد أن واجهت التهاب المفاصل ، اعتقدت أن المخرج الوحيد هو الجراحة.
+                            بسبب بروز العظم ، كان المشي مؤلمًا ، وكانت الأنسجة متورمة وتؤلمني باستمرار. نصحني صديقي ب
+                            Arthrocalm. لقد جربته وفي نفس اليوم شعرت أن الورم بدأ يصغر. وبعد شهر اختفى! أنا بصحة جيدة!
+                            انظروا إلى النتيجة ، أنا ممتن جدًا!</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="block10">
+            <div class="container">
+                <div class="block10__content">
+                    <div class="block10__container">
+                        <div class="block10__header">احذروا من المنتجات المقلدة!</div>
+                        <div class="block10__text">من أجل تجنب المنتجات المنافسة الزائفة ومنخفضة الجودة ، اشترِ المنتج
+                            الأصلي هنا فقط على هذا الموقع.
+                        </div>
+                        <div class="block10__subheader">جودة مضمونة 100٪ من قبل الشركة المصنعة</div>
+                    </div>
+                    <div class="block10__package">
+                        <img src="img/package.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="block11">
+            <div class="container">
+                <h3 class="header">
+                    <span class="header__text">كيف تطلب أرتروكالم</span>
+                </h3>
+                <ul class="block11-list">
+                    <li class="block11-list__item">
+                        <div class="block11-list__img">
+                            <img src="img/step1.png" alt="">
+                        </div>
+                        <div class="block11-list__header">الخطوى الاولى</div>
+                        <div class="block11-list__text">قم بإجراء طلب عبر الإنترنت من الموقع عن طريق ملء النموذج أدناه
+                        </div>
+                    </li>
+                    <li class="block11-list__item">
+                        <div class="block11-list__img">
+                            <img src="img/step2.png" alt="">
+                        </div>
+                        <div class="block11-list__header">الخطوة الثانية</div>
+                        <div class="block11-list__text">سيتصل بك أحد ممثلينا في غضون 60 دقيقة.</div>
+                    </li>
+                    <li class="block11-list__item">
+                        <div class="block11-list__img">
+                            <img src="img/step3.png" alt="">
+                        </div>
+                        <div class="block11-list__header">الخطوة الثالثة</div>
+                        <div class="block11-list__text">سنقوم بتغليف طلبك بعناية وشحنه في نفس اليوم.
+                        </div>
+                    </li>
+                    <li class="block11-list__item">
+                        <div class="block11-list__img">
+                            <img src="img/step4.png" alt="">
+                        </div>
+                        <div class="block11-list__header">الخطوة الرابعة</div>
+                        <div class="block11-list__text">يتم الدفع عند استلام الطلب.</div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="block1 block1--last">
+            <div class="container">
+                <h1 class="block1-header">
+                    <div class="block1-header__text block2__text-original" style="padding: 2px;">أرتروكالم - أفضل مكمل غذائي
+                        طبيعي 
+                        لألام المفاصل
+                    </div>
+                    <div class="block1-header__subtext">إنسَ أمر ألم المفاصل فورًا وإلى الأبد!
+                    </div>
+                </h1>
+                <div class="package-img mobile">
+                    <img src="img/package.png" alt="">
+                </div>
+                <div class="block1-container">
+                    <div class="block1-container__left">
+                        <ul class="block1-list">
+                            <li class="block1-list__item">
+                                <img src="img/i.png" alt="" class="block1-list__img">
+                                <div class="block1-list__text">في 99٪ من الحالات ، يتم تجديد أنسجة المفاصل التالفة.
+                                </div>
+                            </li>
+                            <li class="block1-list__item">
+                                <img src="img/i.png" alt="" class="block1-list__img">
+                                <div class="block1-list__text">يعيد حرية الحركة خلال اسبوعين
+                                </div>
+                            </li>
+                            <li class="block1-list__item">
+                                <img src="img/i.png" alt="" class="block1-list__img">
+                                <div class="block1-list__text">يخفف جميع أعراض الألم في غضون 30 دقيقة بعد الاستخدام
+                                </div>
+                            </li>
+                            <li class="block1-list__item">
+                                <img src="img/i.png" alt="" class="block1-list__img">
+                                <div class="block1-list__text">يوقف جميع الإلتهابات ، وستنسى هذه المشكلة إلى الأبد.
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="block1__bottom-text" style="margin-top: 5px">يعيد صحة المفاصل خلال 28 يوم</div>
+                    </div>
+                    <div class="block1-container__right">
+                        <form class="form orderForm" method="post" action="">
+                            <div class="form__sticker">
+                                <div class="form__sticker-text">-50%</div>
+                            </div>
+                            <div id="to_scroll" class="to_scroll"></div>
+                            <div class="form__container">
+                                <div class="form__header">إملأ النموذج</div>
+                                <?= countryDefault() ?>
+                                <div class="form__row">
+                                    <input placeholder="الاسم الكامل" type="text" class="form__input order_data required tooltipstered" id="name" name="name" required autocomplete="off">
+                                </div>
+                                <div class="form__row">
+                                    <input placeholder="الهاتف المحمول" type="tel" id="phone" class="form__input order_data required tooltipstered" name="phone" required autocomplete="off" >
+                                </div>
+                                <div class="form__price">
+                                    <div class="form__price--old" style="font-size: 1.5em; white-space: nowrap;"><?= $oldPriceHtml ?><?= $currencyDisplayHtml ?>
+                                    </div>
+                                    <div class="form__price--new" style="white-space: nowrap"><?= $newPriceHtml ?><?= $currencyDisplayHtml ?></div>
+                                </div>
+                                <button class="btn buynow" type="submit">شراء</button>
+                                <div class="timer">
+                                    <div class="timer__header">الوقت المتبقي لنهاية العرض الترويجي</div>
+                                    <div class="timer__container">
+                                        <div class="timer__item timer__item_hours">
+                                            <div id="hours" class="timer__item-tx">00</div>
+                                            <div class="timer__item-label">ساعات</div>
+                                        </div>
+                                        <div class="timer__item timer__item_minutes">
+                                            <div id="min" class="timer__item-tx">49</div>
+                                            <div class="timer__item-label">دقائق</div>
+                                        </div>
+                                        <div class="timer__item timer__item_seconds">
+                                            <div id="sec" class="timer__item-tx">32</div>
+                                            <div class="timer__item-label">ثواني</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="package desktop"></div>
+                <div class="block1-decor"></div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__container" style="justify-content: center;">
+                    <div class="footer__text" style="text-align: center;"><center><?= footer('en') ?></center>
+
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </section>
+    <div id="mop_holder" style="display: none;">
+        <span class="mop_close" onclick="document.getElementById('mop_holder').style.display = 'none';">✕</span>
+        <div class="mop_header">اليوم فقط! آخر فرصة - لم يتبق سوى 9 قطع بسعر التخفيضات!
+        </div>
+        <div class="mop_col mop_col_left">
+            <div class="mop_padder">
+                <img src="img/package.png" alt="" class="prod_img">
+            </div>
+        </div>
+        <form class="orderForm" method="post" action="">
+            <div class="mop_col mop_col_right ">
+                <?= countryDefault() ?>
+
+                <div class="mop_padder">
+                    <div class="mop_text"><span style="font-size: 28px;">لجميع عملائنا يوجد سعر خاص <br><strong style="color:red"> عرض خاص على Arthrocalm مع خصم 50٪</strong></span><br><br>
+                    </div>
+                    <div class="mop_form-row">
+                        <input type="text" placeholder="الاسم الكامل" name="name" id="name" class="order_data required mop_input tooltipstered" required autocomplete="off">
+                    </div>
+                    <div class="mop_form-row">
+                        <input type="tel" placeholder="الهاتف المحمول" name="phone" class="order_data required mop_input tooltipstered" autocomplete="off" required >
+                    </div>
+                    <br style="clear: both">
+                    <button class="mop_buynowbtn" type="submit">شراء</button>
+                </div>
+            </div>
+        </form>
+        <br style="clear: both">
+        <div class="mop_footer"><br>سيتصل بك أحد عمالنا للحصول على استشارة مجانية وتكميل الطلب.</div>
+    </div>
+<!--    <div id="custom_last_buyer">-->
+<!--        <img src="img/bankaSmall.png">-->
+<!--        <p style="padding: 0px 20px;">-->
+<!--            <span class="lb-name">عدنان</span>-->
+<!--            <span class="lb-just-placed">قدم طلبًا للتو.</span>-->
+<!--        </p>-->
+<!--    </div>-->
+
+    <script>
+        const anchorst = document.querySelectorAll('a[href*="#"]')
+
+        for (let anchort of anchorst) {
+            anchort.addEventListener('click', function(e) {
+                e.preventDefault()
+                const blockID = anchort.getAttribute('href')
+
+                document.querySelector('' + blockID).scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                })
+            })
+        }
+    </script>
+<!--    <script>-->
+<!--        let page = document.getElementById('custom_last_buyer');-->
+
+<!--        setInterval(function() {-->
+<!--            page.classList.toggle('lb-custom-fade-in');-->
+<!--        }, 10000)-->
+<!--    </script>-->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            date_for_sale = new Date().getTime();
+            date_for_sale = date_for_sale + 60 * 50 * 1000;
+            document.querySelectorAll('.timer__container').forEach((timerBlock) => {
+                countdown(timerBlock);
+            });
+        });
+
+        function countdown(block) {
+            var days = 24 * 60 * 60,
+                hours = 60 * 60,
+                minutes = 60;
+            seconds = 1;
+            var left = Math.floor((date_for_sale - (new Date().getTime())) / 1000);
+            if (left < 0) {
+                left = 0;
+            }
+            h = Math.floor(left / hours);
+            if (h < 10) {
+                h = '0' + h;
+            }
+            left -= h * hours;
+            m = Math.floor(left / minutes);
+            if (m < 10) {
+                m = '0' + m;
+            }
+            left -= m * minutes;
+            s = Math.floor(left / seconds);
+            if (s < 10) {
+                s = '0' + s;
+            }
+            block.querySelector('#hours').innerHTML = h;
+            block.querySelector('#min').innerHTML = m;
+            block.querySelector('#sec').innerHTML = s;
+
+
+
+            if (h > 0 || m > 0 || s > 0 || d > 0) {
+                setTimeout(() => {
+                    countdown(block);
+                }, 1000);
+            }
+        }
+    </script>
+    <script>
+        var comebackerID = 'mop_holder';
+        var comebacker = document.getElementById(comebackerID);
+        var isShow = 0;
+
+        window.isShow = 0;
+        var stateObj = {
+            foo: "bar"
+        };
+        var curURL = window.location.href;
+        var curTitle = document.title;
+        history.pushState(stateObj, curTitle, curURL);
+
+        window.onpopstate = function(event) {
+            history.pushState(stateObj, curTitle, curURL);
+            if (isShow === 0) {
+                document.getElementById('mop_holder').style.display = 'block';
+                isShow = 1;
+            }
+        };
+        document.body.onmouseout = function(event) {
+            if (event.clientY < 0 && isShow == 0) {
+                document.getElementById('mop_holder').style.display = 'block';
+                isShow = 1;
+            }
+
+        };
+        document.getElementById('mop_holder').onclick = function(event) {
+            if (event.target.id == "mop_holder") {
+                document.getElementById('mop_holder').style.display = 'none';
+            }
+        };
+    </script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script src="js/index.js"></script>
+    <!-- INTH_SNIPPET_BOTTOM -->
+</body>
+</html>
